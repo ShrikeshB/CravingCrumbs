@@ -1,0 +1,83 @@
+section {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 65px;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.436);
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.436);
+  position: fixed;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+.nav .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-left: 5em;
+}
+
+.nav .search-btn form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .search-btn form input[type="search"] {
+  border-radius: 2em 0em 0em 2em;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid black;
+  border-right: none;
+  outline-color: var(--btnColor);
+}
+
+.nav .search-btn form button {
+  border-radius: 0em 2em 2em 0em;
+  background-color: var(--btnColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 5px 10px;
+}
+
+.nav .search-btn form button img {
+  width: 80%;
+}
+
+.nav .more-cakes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+}
+
+.nav .more-cakes select {
+  padding: 5px;
+  border-radius: 2em;
+}
+/*# sourceMappingURL=filter.css.map */

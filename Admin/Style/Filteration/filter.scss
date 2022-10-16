@@ -1,0 +1,57 @@
+section {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 65px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.436);
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    .search-btn {
+        display: flex;
+        width: 50%;
+        margin-left: 5em;
+        form {
+            width: 100%;
+            display: flex;
+
+            input[type="search"] {
+                border-radius: 2em 0em 0em 2em;
+
+                padding: 5px;
+                width: 100%;
+                border: 1px solid black;
+                border-right: none;
+                outline-color: var(--btnColor);
+            }
+            button {
+                border-radius: 0em 2em 2em 0em;
+                background-color: var(--btnColor);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                padding: 5px 10px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .more-cakes {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 30%;
+        select {
+            padding: 5px;
+            border-radius: 2em;
+        }
+    }
+}

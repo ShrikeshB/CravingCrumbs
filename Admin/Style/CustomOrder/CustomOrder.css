@@ -1,0 +1,46 @@
+:root {
+  --subMenu: #242a3a;
+  --profileBG: #00e6ff;
+  --blue: #0091dc;
+  --btnColor: #fd9b4e;
+}
+
+.orders .info .bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.orders .info .bottom form input[type='number'] {
+  padding: 5px 1em;
+  border-radius: 5em;
+  border: 1px solid black;
+  outline-color: #fd9b4e;
+}
+
+.orders .info .bottom form input[type='submit'] {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5em;
+  color: white;
+  padding: 8px 1em;
+}
+
+.orders .info .bottom .reject {
+  background-color: red;
+}
+
+.orders .info .bottom .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orders .info .bottom .float-card .container .info .content {
+  margin-left: 0;
+}
+/*# sourceMappingURL=CustomOrder.css.map */

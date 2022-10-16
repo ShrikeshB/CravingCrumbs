@@ -1,0 +1,104 @@
+@import url(../Side-Nav/sideNav.css);
+@import url(../Float-card/floatCard.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, calibri;
+    box-sizing: border-box;
+}
+
+:root {
+    --subMenu: #242a3a;
+    --profileBG: #00e6ff;
+    --blue: #0091dc;
+    --btnColor: #fd9b4e;
+}
+
+body{
+    position: relative;
+}
+
+
+
+// dark overlay in the BG of float card..
+.overlay{
+    background-color: rgba(0, 0, 0, 0.466);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    display: none;
+}
+.overlay.active{
+    display: block;
+}
+
+section {
+    width: 80%;
+    float: right;
+    padding: 2em;
+    height: 100vh;
+    margin-top: 5em;
+    position: relative;
+}
+
+.orders {
+    margin-top: 1em;
+    .order-card {
+        display: flex;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.301);
+        width: 100%;
+        height: 230px;
+        margin-bottom: 2em;
+        .img-container {
+            width: 20%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .info {
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 75%;
+        margin-bottom: 1em;
+
+        .top {
+            h1 {
+                font-weight: 400;
+            }
+
+            .price {
+                font-weight: 500;
+                font-size: 25px;
+                color: red;
+            }
+        }
+
+        .bottom {
+            align-self: flex-end;
+            display: flex;
+            .btn {
+                text-decoration: none;
+                color: white;
+                padding: 5px 2em;
+                border-radius: 5em;
+                cursor: pointer;
+            }
+
+            .view-btn {
+                background-color: var(--btnColor);
+                margin-right: 1em;
+            }
+            .delivered-btn {
+                background-color: var(--blue);
+            }
+        }
+    }
+}

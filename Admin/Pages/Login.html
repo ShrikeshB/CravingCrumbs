@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craving Crumb | Authentication</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="../../Icons/cake-white.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../Style/Auth/auth.css">
+
+  </head>
+  <body>
+    <!-- To import logo -->
+    <div class="logo">
+      <div class="img-contianer">
+        <img src="../../Images/Component_Img/Logo.png" alt="" />
+      </div>
+    </div>
+
+    <!-- form containe -->
+    <div class="container">
+      <div class="forms">
+        <div class="form-container">
+          <!-- Login Form -->
+          <div class="login-form">
+            <div class="img-container">
+              <img src="../../Images/Component_Img/Logo.png" alt="" /><br>
+
+            </div>
+            <form action="http://localhost/CakeSite/Admin/PHP/AdminVerification.php" method="post">
+              <div class="input-field">
+                <label>Email/Username</label><br />
+                <input name="email" type="text" required />
+              </div>
+              <div class="input-field">
+                <label>Password</label><br />
+                <input name="password" type="password" required />
+              </div>
+              <div class="btn-field">
+                <input name="login" type="submit" value="Login" />
+              </div>
+    
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Script for form animation -->
+  <script src="../JS/Auth/AuthAnimation.js"></script>
+</html>

@@ -1,0 +1,124 @@
+.float-card {
+  background-color: white;
+  display: none;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.33);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.33);
+  position: fixed;
+  text-align: center;
+  border-radius: 2em;
+  z-index: 100;
+  height: 75vh;
+  width: 85%;
+  padding: 3em;
+  top: 12%;
+  left: 8%;
+}
+
+.float-card .container {
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.float-card .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.float-card .container .info .content {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.float-card .container .info .content .title {
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.float-card .container .info .content ul .price {
+  color: var(--btnColor);
+  font-weight: 500;
+}
+
+.float-card .container .info .content ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.float-card .container .info .content ul li span {
+  font-weight: 500;
+}
+
+.float-card .container .info .content .order-details {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 1em;
+}
+
+.float-card .container .info .content .btns {
+  margin-top: 1em;
+}
+
+.float-card .container .info .content .btns .btn {
+  text-decoration: none;
+  color: white;
+  padding: 5px 1em;
+  border-radius: 5em;
+}
+
+.float-card .container .info .content .btns .Del-btn {
+  background-color: red;
+}
+
+.float-card .container .info .content .btns .Edit-btn {
+  background-color: var(--btnColor);
+}
+
+.float-card .close-btn {
+  position: absolute;
+  right: 5%;
+  z-index: 140;
+}
+
+.float-card .close-btn .line {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.float-card .close-btn .l1 {
+  -webkit-transform: rotateZ(40deg);
+          transform: rotateZ(40deg);
+}
+
+.float-card .close-btn .l2 {
+  -webkit-transform: rotateZ(140deg);
+          transform: rotateZ(140deg);
+  margin-top: -5px;
+}
+
+.float-card.active {
+  display: block;
+}
+/*# sourceMappingURL=floatCard.css.map */

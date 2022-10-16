@@ -1,0 +1,131 @@
+@import url(../../../src/Styles/Components/Input-Fields/inputFields.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins, calibri;
+}
+
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+  --subMenu: #242a3a;
+  --profileBG: #00e6ff;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.Cake-Edit .container form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.Cake-Edit .container form .design-photo {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Cake-Edit .container form .design-photo label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.Cake-Edit .container form .design-photo p {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.Cake-Edit .container form .design-photo .btn {
+  margin-top: 1em;
+  background-color: var(--btnColor);
+  border-radius: 5em;
+  padding: 5px 1em;
+  color: white;
+  text-align: center;
+  width: 30%;
+}
+
+.Cake-Edit .container form .design-photo input {
+  display: none;
+}
+
+.Cake-Edit .container form .design-photo .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.Cake-Edit .container form .design-photo .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.Cake-Edit .container form .info {
+  width: 50%;
+  background-color: var(--subMenu);
+  color: white;
+  padding: 2em;
+}
+
+.Cake-Edit .container form .info .heading {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 2em;
+}
+
+.Cake-Edit .container form .info .btn {
+  margin-top: 2em;
+  background-color: var(--btnColor);
+  border-radius: 5em;
+  padding: 5px 1em;
+  color: white;
+  text-align: center;
+  width: 20%;
+  cursor: pointer;
+}
+
+.Cake-Edit .container form .input-field {
+  width: 100%;
+}
+
+.Cake-Edit .container form .input-field select {
+  background-color: #fff;
+}
+/*# sourceMappingURL=CakeDetails.css.map */

@@ -1,0 +1,240 @@
+@import url(../Side-Nav/sideNav.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, calibri;
+    box-sizing: border-box;
+}
+
+:root {
+    --subMenu: #242a3a;
+    --profileBG: #00e6ff;
+    --blue: #0091dc;
+    --btnColor: #fd9b4e;
+}
+
+// this is used to disable the srolling when the float is enabled..
+body.active{
+    overflow: hidden;
+}
+
+// dark overlay in the BG of float card..
+.overlay{
+    background-color: rgba(0, 0, 0, 0.466);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    display: none;
+}
+.overlay.active{
+    display: block;
+}
+
+section {
+    width: 80%;
+    float: right;
+    padding: 2em;
+    height: 100vh;
+    margin-top: 5em;
+    position: relative;
+   
+ 
+
+    // float card design...
+    .float-card {
+        background-color: white;
+        display: none;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.33);
+        position: fixed;
+        text-align: center;
+        border-radius: 2em;
+        z-index: 100;
+        height: 75vh;
+        width: 60%;
+        padding: 3em;
+        top: 12%;
+
+        left: 25%;
+
+        .container {
+            text-align: left;
+            height: 100%;
+            margin-top: 1em;
+            .info {
+                display: flex;
+                height: 100%;
+                .img-container {
+                    width: 55%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .content {
+                    margin-left: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .title {
+                        font-weight: 600;
+                        margin-bottom: 2em;
+                        font-size: 20px;
+                    }
+                    ul {
+
+
+                        .price{
+                            color: var(--btnColor);
+                            font-weight: 500;
+                        }
+
+                        li {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            column-gap: 5px;
+
+                            margin-bottom: 5px;
+                            span{
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .btns {
+                        margin-top: 1em;
+                        .btn {
+                            text-decoration: none;
+                            color: white;
+                            padding: 5px 1em;
+                            border-radius: 5em;
+                        }
+
+                        .Del-btn{
+                            background-color: red;
+                        }
+                        .Edit-btn{
+                            background-color: var(--btnColor);
+                           
+                        }
+                    }
+                }
+            }
+        }
+
+        .close-btn{
+            position: absolute;
+            right: 5%;
+            z-index: 140;
+            .line{
+                width: 25px;
+                height: 5px;
+                background-color: black;
+                cursor: pointer;
+            }
+            .l1{
+                transform: rotateZ(40deg);
+            }
+            .l2{
+                transform: rotateZ(140deg);
+                margin-top: -5px;
+            }
+        }
+    }
+
+    .float-card.active {
+        display: block;
+    }
+
+    // table design...
+    table {
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+        tr {
+            td {
+                padding: 0.5em 0;
+
+                .view {
+                    background-color: var(--btnColor);
+                    color: white;
+                    padding: 5px 15px;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+
+            th {
+                padding-bottom: 0.5em;
+            }
+        }
+
+        tr ~ tr:nth-child(odd) {
+            background-color: rgba(107, 107, 107, 0.115);
+        }
+    }
+}
+
+
+.nav{
+
+    width: 100%;
+    height: 65px;
+    margin: 1em;
+    left: 0;
+    // box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.436);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    .search-btn {
+        display: flex;
+        width: 50%;
+        margin-left: 5em;
+        form {
+            width: 100%;
+            display: flex;
+
+            input[type="search"] {
+                border-radius: 2em 0em 0em 2em;
+
+                padding: 5px;
+                width: 100%;
+                border: 1px solid black;
+                border-right: none;
+                outline-color: var(--btnColor);
+            }
+            button {
+                border-radius: 0em 2em 2em 0em;
+                background-color: var(--btnColor);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                padding: 5px 10px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .more-cakes {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 30%;
+        select {
+            padding: 5px;
+            border-radius: 2em;
+        }
+    }
+   }

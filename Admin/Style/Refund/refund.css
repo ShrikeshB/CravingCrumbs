@@ -1,0 +1,86 @@
+@import url(../Side-Nav/sideNav.css);
+@import url(../Float-card/floatCard.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, calibri;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --subMenu: #242a3a;
+  --profileBG: #00e6ff;
+  --blue: #0091dc;
+  --btnColor: #fd9b4e;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.466);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+section {
+  width: 80%;
+  float: right;
+  padding: 2em;
+  height: 100vh;
+  margin-top: 5em;
+  position: relative;
+}
+
+section table {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+section table tr td {
+  padding: 0.5em 0;
+}
+
+section table tr td .view {
+  background-color: var(--btnColor);
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section table tr th {
+  padding-bottom: 0.5em;
+}
+
+section table tr ~ tr:nth-child(odd) {
+  background-color: rgba(107, 107, 107, 0.115);
+}
+
+.nav {
+  width: 100%;
+  height: 65px;
+  margin: 1em;
+  left: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+/*# sourceMappingURL=refund.css.map */

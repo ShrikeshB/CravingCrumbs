@@ -1,0 +1,117 @@
+@import url(../Side-Nav/sideNav.css);
+@import url(../Float-card/floatCard.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, calibri;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --subMenu: #242a3a;
+  --profileBG: #00e6ff;
+  --blue: #0091dc;
+  --btnColor: #fd9b4e;
+}
+
+body {
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.466);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+section {
+  width: 80%;
+  float: right;
+  padding: 2em;
+  height: 100vh;
+  margin-top: 5em;
+  position: relative;
+}
+
+.orders {
+  margin-top: 1em;
+}
+
+.orders .order-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.301);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.301);
+  width: 100%;
+  height: 230px;
+  margin-bottom: 2em;
+}
+
+.orders .order-card .img-container {
+  width: 20%;
+}
+
+.orders .order-card .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.orders .info {
+  margin-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+  margin-bottom: 1em;
+}
+
+.orders .info .top h1 {
+  font-weight: 400;
+}
+
+.orders .info .top .price {
+  font-weight: 500;
+  font-size: 25px;
+  color: red;
+}
+
+.orders .info .bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orders .info .bottom .btn {
+  text-decoration: none;
+  color: white;
+  padding: 5px 2em;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+.orders .info .bottom .view-btn {
+  background-color: var(--btnColor);
+  margin-right: 1em;
+}
+
+.orders .info .bottom .delivered-btn {
+  background-color: var(--blue);
+}
+/*# sourceMappingURL=orders.css.map */
