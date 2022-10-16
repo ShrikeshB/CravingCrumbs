@@ -1,0 +1,49 @@
+:root {
+    // bg color for body bg.
+    --bodyColor: #dce5f3;
+    //btn colors
+    --btnColor: #fd9b4e;
+    //price text color
+    --priceColor: #f93539;
+}
+
+// text input fields
+.input-field{
+    display: flex;
+    flex-direction: column;
+    label{
+        align-self: flex-start;
+        margin-left: 0.5em;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    input{
+        border: 1px solid black;
+        border-radius: 5em;
+        padding: 5px 1em;
+        width: 100%;
+        outline-color: var(--btnColor);
+    }
+  
+}
+
+.input-field ~ .input-field{
+    margin-top: 1.5em;
+}
+
+
+// text area
+textarea{
+    outline-color: var(--btnColor);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px 1em;
+}
+
+select{
+    outline-color: var(--btnColor);
+    border-radius: 5em;
+    border: 1px solid black;
+    padding: 5px 1em;
+}

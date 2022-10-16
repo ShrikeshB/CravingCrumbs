@@ -1,0 +1,138 @@
+// Responsive behaviour for auth page
+
+
+// 400px devices
+@media only screen and (max-width:1024px) {
+
+    // Logo size
+    .logo img {
+        width: 100%;
+    }
+
+    .container{
+        justify-content: center;
+        margin-top: 0em;
+        align-items: center;
+        .forms{
+            margin: 0;
+            height: 50%;
+            width: 55%;
+            .form-container{
+                height: 100%;
+                align-items: center;
+            }
+
+            .Signup-form {
+                h1{
+                    font-size: 25px;
+                    margin-top: 2em;
+                }
+
+                form{
+                    margin-top: 1em;
+                }
+            }
+
+            .login-form .img-container {
+
+                margin-top: 2em;
+               img{
+                width: 80%;
+               }
+            }
+
+        }
+
+        
+    }
+}
+
+
+
+// 800px devices
+@media only screen and (max-width:800px){
+
+      // Logo size
+      .logo img {
+        width: 80%;
+    }
+
+    //Auth Forms
+    .container{
+        justify-content: center;
+        .forms{
+            margin: 0;
+            width: 50%;
+
+            .Signup-form form{
+                h1{
+                    font-size: 21px;
+                }
+            }
+
+            .Signup-form form,.login-form form {
+                width: 80%;
+
+                label{
+                    font-size: 12px;
+                }
+
+                .input-field{
+                    margin-bottom: 1em;
+                    input{
+                        padding: 3px 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// 400px devices
+@media only screen and (max-width:480px) {
+
+    // Logo size
+    .logo img {
+        width: 100%;
+    }
+
+    .container{
+        justify-content: center;
+        margin-top: 0em;
+        align-items: center;
+        .forms{
+            margin: 0;
+            height: 75%;
+            width: 75%;
+            .form-container{
+                height: 100%;
+                align-items: center;
+            }
+
+            .Signup-form {
+                h1{
+                    font-size: 25px;
+                    margin-top: 2em;
+                }
+
+                form{
+                    margin-top: 1em;
+                }
+            }
+
+            .login-form .img-container {
+
+                margin-top: 2em;
+               img{
+                width: 60%;
+               }
+            }
+
+        }
+
+        
+    }
+}

@@ -1,0 +1,12 @@
+@import url(../Components/Components.css);
+@import url(../Navbar/Navbar.css);
+@import url(../Components/order-card/OrderCard.css);
+.order-section {
+  padding-top: 10em;
+}
+
+.order-section .order-card-container {
+  margin-top: 2em;
+  width: 100%;
+}
+/*# sourceMappingURL=order.css.map */

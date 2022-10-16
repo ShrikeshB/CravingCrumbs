@@ -1,0 +1,189 @@
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+  --priceColor: #ff0000;
+}
+
+.order-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.301);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.301);
+  width: 100%;
+  height: 230px;
+  margin-bottom: 2em;
+}
+
+.order-card .img-container {
+  width: 20%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-card .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.order-card .content {
+  margin-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+  margin-bottom: 1em;
+}
+
+.order-card .content h1 {
+  font-weight: 400;
+}
+
+.order-card .content .price {
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--priceColor);
+}
+
+.order-card .content .bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-card .content .bottom .cancel-btn {
+  background-color: var(--btnColor);
+  text-decoration: none;
+  color: white;
+  padding: 5px 1em;
+  height: 40px;
+  border-radius: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.order-card .content .bottom .view-more {
+  text-decoration: none;
+}
+
+.order-card .cust-content {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 1024px) {
+  .order-card .img-container {
+    width: 40%;
+  }
+  .order-card .content .bottom {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-card .content .bottom a {
+    width: 30%;
+  }
+  .order-card .content .bottom .btns {
+    margin-top: 2em;
+  }
+  .order-card .content .bottom .btns .remove-btn {
+    background-color: #d2d2d2;
+    color: black;
+    opacity: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .order-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    padding-bottom: 2em;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
+  .order-card .img-container {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 2em;
+  }
+  .order-card .content {
+    width: 100%;
+    margin: 0;
+    padding: 0 1em;
+  }
+  .order-card .content .bottom {
+    width: 100%;
+  }
+  .order-card .content .bottom a {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .order-card .content .bottom a {
+    width: 50%;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .order-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    width: 100%;
+    padding-bottom: 2em;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
+  .order-card .img-container {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 2em;
+  }
+  .order-card .content {
+    width: 100%;
+    margin: 0;
+    padding: 0 1em;
+  }
+  .order-card .content .bottom {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=OrderCard.css.map */

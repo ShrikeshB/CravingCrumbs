@@ -1,0 +1,43 @@
+.stars-grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.stars-grp .star {
+  background-image: url(../../../../Icons/unrated.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  -webkit-transition: ease .15s;
+  transition: ease .15s;
+}
+
+.stars-grp .rated {
+  background-image: url(../../../../Icons/Rated.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  -webkit-transition: ease .15s;
+  transition: ease .15s;
+}
+
+.stars-grp .unrated {
+  background-image: url(../../../../Icons/unrated.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  -webkit-transition: ease .15s;
+  transition: ease .15s;
+}
+/*# sourceMappingURL=stars.css.map */

@@ -1,0 +1,104 @@
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+}
+
+.cust-radio {
+  margin-bottom: 2em;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.cust-radio label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cust-radio label input[type="radio"] {
+  display: none;
+}
+
+.cust-radio label .outer-circle {
+  width: 3em;
+  height: 3em;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 2px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+  -webkit-transition: ease .15s;
+  transition: ease .15s;
+}
+
+.cust-radio label .outer-circle p {
+  z-index: 2;
+  text-align: center;
+}
+
+.cust-radio label .outer-circle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cust-radio label .outer-circle::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  background-color: var(--btnColor);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
+}
+
+.cust-radio label input:checked + .outer-circle::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cust-radio label input:checked + .outer-circle {
+  border: none;
+  color: white;
+}
+
+.cust-radio label ~ label {
+  margin-left: 1em;
+}
+/*# sourceMappingURL=cust-radio.css.map */

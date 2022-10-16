@@ -1,0 +1,161 @@
+@import url(../Navbar/Navbar.css);
+@import url(../Components/Components.css);
+@import url(../Components/Custom-radio/cust-radio.css);
+@import url(../Components/Review-card/ReviewCard.css);
+@import url(../Components/Stars/stars.css);
+.stars-grp {
+  margin-bottom: 5px;
+}
+
+.stars-grp .unrated {
+  width: 25px;
+  height: 25px;
+}
+
+.stars-grp .rated {
+  width: 25px;
+  height: 25px;
+}
+
+.cake-info-section {
+  padding-top: 6em;
+  width: 100%;
+}
+
+.cake-info-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.cake-info-section .container .cake-img {
+  width: 50%;
+  height: 85vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cake-info-section .container .cake-img img {
+  width: 90%;
+  height: 100%;
+}
+
+.cake-info-section .container .content {
+  width: 50%;
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cake-info-section .container .content .info ul {
+  margin-top: 1em;
+  width: 38%;
+}
+
+.cake-info-section .container .content .info ul li {
+  font-weight: 300;
+  font-size: 14px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.cake-info-section .container .content .info ul li span {
+  font-weight: 500;
+}
+
+.cake-info-section .container .content .info ul li ~ li {
+  margin-top: 3px;
+}
+
+.cake-info-section .container .content .info .title {
+  font-weight: 500;
+}
+
+.cake-info-section .container .content .info .price {
+  color: var(--btnColor);
+  font-size: 30px;
+}
+
+.cake-info-section .container .content form {
+  width: 40%;
+}
+
+.cake-info-section .container .content form .size h3 {
+  font-weight: 400;
+}
+
+.cake-info-section .container .content form select {
+  width: 100%;
+  border-radius: 5em;
+  border: 1px solid black;
+  outline-color: var(--btnColor);
+  padding: 8px 1em;
+  margin-bottom: 2em;
+}
+
+.cake-info-section .container .content form .msg {
+  width: 100%;
+  border-radius: 5em;
+  border: 1px solid black;
+  outline-color: var(--btnColor);
+  padding: 8px 1em;
+  margin-bottom: 2em;
+}
+
+.cake-info-section .container .content form .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cake-info-section .container .content form .btns input {
+  width: 48%;
+  background-color: var(--btnColor);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 8px 1em;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+.cake-info-section .container .content form .btns .cart-btn {
+  background-color: #cfcfcf;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48%;
+  border-radius: 5em;
+}
+/*# sourceMappingURL=Details.css.map */

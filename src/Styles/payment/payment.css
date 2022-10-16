@@ -1,0 +1,191 @@
+@import url(../Navbar/Navbar.css);
+@import url(../Components/Components.css);
+@import url(../Components/Input-Fields/inputFields.css);
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+}
+
+body {
+  background-image: url(../../../Images/Component_Img/cupCake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 10%;
+  margin-left: 2em;
+  padding-top: 2em;
+}
+
+.payment-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.185);
+          box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.185);
+  padding: 2em 0em;
+  border-radius: 2em;
+  background-color: #fff;
+}
+
+.payment-section h1 {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.payment-section .info {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 3em;
+}
+
+.payment-section .info table tr td ~ td {
+  padding-left: 1em;
+}
+
+.payment-section .info table .total {
+  color: #fd9b4e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.payment-section .info .delivery-info {
+  margin-top: 2em;
+}
+
+.payment-section .payment-method {
+  width: 50%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.payment-section .payment-method .img-container {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 40%;
+}
+
+.payment-section .payment-method .img-container img {
+  width: 100%;
+}
+
+.payment-section .payment-method .pay-container {
+  width: 200%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.payment-section .payment-method .pay-container.active {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.payment-section .payment-method .arrow-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 5em;
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  -webkit-box-shadow: 0px 0px 6px black;
+          box-shadow: 0px 0px 6px black;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.payment-section .payment-method .arrow-btn img {
+  width: 50%;
+}
+
+.payment-section .payment-method .reverse-arrow {
+  right: 0px;
+}
+
+.payment-section .payment-method .reverse-arrow img {
+  -webkit-transform: scaleX(-100%);
+          transform: scaleX(-100%);
+}
+
+.payment-section .payment-method .Debit-card {
+  width: 52%;
+  position: relative;
+}
+
+.payment-section .payment-method .Debit-card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.payment-section .payment-method .Debit-card form .input-field {
+  width: 100%;
+}
+
+.payment-section .payment-method .Debit-card form input[type="submit"] {
+  background-color: var(--btnColor);
+  border: none;
+  color: white;
+  padding: 10px 1em;
+  border-radius: 5em;
+  width: 50%;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.payment-section .payment-method .upi-payment {
+  position: relative;
+  width: 40%;
+}
+
+.payment-section .payment-method .upi-payment .img-container {
+  width: 50%;
+}
+
+.payment-section .payment-method .upi-payment .qr-code {
+  width: 50%;
+}
+/*# sourceMappingURL=payment.css.map */

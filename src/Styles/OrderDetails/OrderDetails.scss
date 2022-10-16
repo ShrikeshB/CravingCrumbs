@@ -1,0 +1,47 @@
+@import url(../Components/Stars/stars.css);
+
+:root {
+    --bodyColor: #dce5f3;
+    --btnColor: #fd9b4e;
+}
+
+.cake-info-section .container .content .info ul li {
+    font-size: 18px;
+    margin-bottom: 0.6em;
+}
+
+.cake-info-section .container .content .info ul {
+    width: 50%;
+}
+
+.review {
+    margin-top: 1em;
+    .heading{
+        font-size: 20px;
+    }
+    .container {
+        width: 100%;
+        form {
+            display: flex;
+            flex-direction: column;
+
+            textarea{
+                resize: none;
+                outline-color: var(--btnColor);
+                padding: 1em;
+            }
+            input[type="submit"] {
+                margin-top: 1em;
+                width: 100px;
+                background-color: var(--btnColor);
+                border: none;
+                border-radius: 5em;
+                color: white;
+                text-align: center;
+                padding: 0.5em 0;
+                cursor: pointer;
+               
+            }
+        }
+    }
+}

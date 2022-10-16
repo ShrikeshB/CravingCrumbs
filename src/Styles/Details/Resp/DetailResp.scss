@@ -1,0 +1,135 @@
+
+
+// device with 1024px screen
+@media only screen and (max-width: 1024px){
+    section{
+        padding: 2em;
+    }
+
+    .cake-info-section{
+        .container{
+ 
+            .cake-img{
+                width: 50%;
+            }
+            .content{
+
+              
+                width: 50%;
+
+                form{
+                    width: 75%;
+                    .size{
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .cake-info-section .container .content .info ul{
+        width: 80%;
+    }
+}
+
+
+// device with 800px screen
+@media only screen and (max-width: 800px){
+    .cake-info-section{
+        padding: 2em 1em;
+        padding-top: 6em;
+        .container{
+            flex-direction: column;
+            margin-left: 1em;
+            height: 100%;
+            .cake-img{
+                width: 50%;
+           
+            }
+            .content{
+                margin-top: 2em;
+                margin-left: 0;
+                width: 100%;
+
+                form{
+                    width: 50%;
+                    .size{
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .review-section{
+        margin-top: 7em;
+    }
+}
+
+// device with 480px screen
+@media only screen and (max-width: 480px){
+    .cake-info-section{
+        padding: 2em 1em;
+        padding-top: 6em;
+        .container{
+            flex-direction: column;
+            .cake-img{
+                width: 92%;
+            }
+            .content{
+                margin-top: 2em;
+                margin-left: 0;
+                width: 100%;
+
+                form{
+                    width: 90%;
+                    .size{
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .review-section{
+        margin-top: 0em;
+    }
+
+    
+   
+}
+
+// device with 360px screen
+@media only screen and (max-width: 360px){
+    .cake-info-section{
+        padding: 2em 1em;
+        padding-top: 6em;
+        .container{
+            flex-direction: column;
+            .cake-img{
+                width: 80%;
+            }
+            .content{
+                margin-top: 2em;
+                margin-left: 0;
+                width: 100%;
+
+                form{
+                    width: 90%;
+                    .size{
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .review-section{
+        margin-top: 0em;
+    }
+
+    .card-container {
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,50 @@
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+  --priceColor: #f93539;
+}
+
+.input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-field label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 0.5em;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  border: 1px solid black;
+  border-radius: 5em;
+  padding: 5px 1em;
+  width: 100%;
+  outline-color: var(--btnColor);
+}
+
+.input-field ~ .input-field {
+  margin-top: 1.5em;
+}
+
+textarea {
+  outline-color: var(--btnColor);
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px 1em;
+}
+
+select {
+  outline-color: var(--btnColor);
+  border-radius: 5em;
+  border: 1px solid black;
+  padding: 5px 1em;
+}
+/*# sourceMappingURL=inputFields.css.map */

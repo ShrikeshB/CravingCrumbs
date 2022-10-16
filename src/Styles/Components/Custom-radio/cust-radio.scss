@@ -1,0 +1,81 @@
+:root {
+    --bodyColor: #dce5f3;
+    --btnColor: #fd9b4e;
+  }
+
+.cust-radio {
+    margin-bottom: 2em;
+    margin-top: 5px;
+    width: 100%;
+    label {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        // outer-circle
+        .outer-circle{
+            width: 3em;
+            height: 3em;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 2px;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            transition: ease .15s;
+            p{
+                z-index: 2;
+                text-align: center;
+            }
+        }
+
+        .outer-circle:hover{
+            transform: scale(1.1);
+        }
+
+        // inner-circle
+        .outer-circle::after{
+            content: "";
+            z-index: 1;
+            position: absolute;
+            width: 3em;
+            height: 3em;
+            background-color: var(--btnColor);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: transform 0.15s;
+        }
+
+        // when checked display inner circle
+        input:checked + .outer-circle::after{
+            transform: scale(1);
+        }
+
+        // when checked hide border of outer-circle
+        input:checked + .outer-circle{
+            border: none;
+            color: white;
+        }
+    }
+
+    // marign for all label except 1st label
+    label ~ label{
+        margin-left: 1em;
+    }
+
+  
+}

@@ -1,0 +1,20 @@
+@import url(./Card/card.css);
+@import url(./Footer/Footer.css);
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+  --priceColor: #f93539;
+}
+
+section {
+  padding: 2em 5em;
+  padding-top: 4em;
+  height: auto;
+  width: 100%;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 35px;
+}
+/*# sourceMappingURL=Components.css.map */

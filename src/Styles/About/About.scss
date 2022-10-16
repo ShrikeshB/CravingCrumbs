@@ -1,0 +1,33 @@
+@import url(../Navbar/Navbar.css);
+@import url(../Components/Components.css);
+
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+
+// about section
+.about-section{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 10em;
+    h1{
+        font-weight: 300;
+        margin-top: 2em;
+    }
+
+    .logo{
+        width: 20%;
+        margin-top: 5em;
+        img{
+            width: 100%;
+        }
+    }
+
+    .content{
+        margin-top: 2em;
+    }
+}

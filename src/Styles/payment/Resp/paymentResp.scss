@@ -1,0 +1,51 @@
+@media only screen and (max-width:800px){
+    .logo{
+        width: 20%;
+
+    }
+
+    .payment-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        .container{
+            flex-direction: column-reverse;
+            width: 100%;
+            align-items: center;
+            
+        }
+        .Debit-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .info{
+            width: 80%;
+            margin-top: 2em;
+
+        }
+
+        .payment-method{
+            width: 80%;
+            margin-top: 2em;
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+
+    .logo{
+        width: 30%;
+
+    }
+
+    .payment-section{
+      padding-left: 1em;
+      padding-right: 1em;
+
+     
+    }
+
+    .payment-section .payment-method .Debit-card form{
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+  --priceColor: #f93539;
+}
+
+.cust-submit-btn {
+  margin-top: 1em;
+  background-color: var(--btnColor);
+  border-radius: 5em;
+  color: white;
+  text-align: center;
+  width: 20%;
+  padding: 10px 0;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=btns.css.map */

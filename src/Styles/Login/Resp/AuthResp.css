@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1024px) {
+  .logo img {
+    width: 100%;
+  }
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .forms {
+    margin: 0;
+    height: 50%;
+    width: 55%;
+  }
+  .container .forms .form-container {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .forms .Signup-form h1 {
+    font-size: 25px;
+    margin-top: 2em;
+  }
+  .container .forms .Signup-form form {
+    margin-top: 1em;
+  }
+  .container .forms .login-form .img-container {
+    margin-top: 2em;
+  }
+  .container .forms .login-form .img-container img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .logo img {
+    width: 80%;
+  }
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .forms {
+    margin: 0;
+    width: 50%;
+  }
+  .container .forms .Signup-form form h1 {
+    font-size: 21px;
+  }
+  .container .forms .Signup-form form, .container .forms .login-form form {
+    width: 80%;
+  }
+  .container .forms .Signup-form form label, .container .forms .login-form form label {
+    font-size: 12px;
+  }
+  .container .forms .Signup-form form .input-field, .container .forms .login-form form .input-field {
+    margin-bottom: 1em;
+  }
+  .container .forms .Signup-form form .input-field input, .container .forms .login-form form .input-field input {
+    padding: 3px 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo img {
+    width: 100%;
+  }
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .forms {
+    margin: 0;
+    height: 75%;
+    width: 75%;
+  }
+  .container .forms .form-container {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .forms .Signup-form h1 {
+    font-size: 25px;
+    margin-top: 2em;
+  }
+  .container .forms .Signup-form form {
+    margin-top: 1em;
+  }
+  .container .forms .login-form .img-container {
+    margin-top: 2em;
+  }
+  .container .forms .login-form .img-container img {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=AuthResp.css.map */

@@ -1,0 +1,90 @@
+@import url(../Components/Components.css);
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+  --priceColor: #f93539;
+}
+
+.hero-section {
+  background-image: url(../../../Images/Component_Img/Hero-section.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+}
+
+section {
+  padding: 2em 5em;
+  padding-top: 4em;
+  height: auto;
+  width: 100%;
+}
+
+.best-seller-section .heading {
+  font-weight: 300;
+  font-size: 35px;
+}
+
+.wedding-cake-section {
+  background-image: url(../../../Images/Component_Img/Wedding-ection.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wedding-cake-section .heading {
+  font-weight: 300;
+  font-size: 35px;
+  color: white;
+}
+
+.Birthday-cake-section {
+  background-image: url(../../../Images/Component_Img/Birthday-Section.png);
+}
+
+.notice {
+  width: 100%;
+  height: 150px;
+  background-color: #f0f7b1;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2em;
+  padding-left: 2em;
+}
+
+.notice .close {
+  position: absolute;
+  right: 1%;
+  bottom: 30%;
+  cursor: pointer;
+}
+
+.notice .close .line {
+  width: 25px;
+  height: 5px;
+  border-radius: 5em;
+  background-color: black;
+}
+
+.notice .close .l1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.notice .close .l2 {
+  -webkit-transform: rotate(145deg);
+          transform: rotate(145deg);
+  margin-top: -5px;
+}
+
+.notice.close {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+@media only screen and (max-width:800px){
+    .contact-us{
+        flex-direction: column;
+        .left, .right{
+            width: 100% ;
+        }
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    .contact-us{
+        height: auto;
+        padding: 2em 1em;
+        flex-direction: column;
+        .left, .right{
+            width: 100% ;
+        }
+
+        .right{
+            .Signup-form {
+                width: 100%;
+            }
+        }
+    }
+}

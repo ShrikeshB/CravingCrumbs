@@ -1,0 +1,58 @@
+@media only screen and (max-width: 800px) {
+  .logo {
+    width: 20%;
+  }
+  .payment-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payment-section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payment-section .Debit-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payment-section .info {
+    width: 80%;
+    margin-top: 2em;
+  }
+  .payment-section .payment-method {
+    width: 80%;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    width: 30%;
+  }
+  .payment-section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .payment-section .payment-method .Debit-card form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=paymentResp.css.map */

@@ -1,0 +1,29 @@
+@media only screen and (max-width: 800px) {
+  .contact-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us .left, .contact-us .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-us {
+    height: auto;
+    padding: 2em 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us .left, .contact-us .right {
+    width: 100%;
+  }
+  .contact-us .right .Signup-form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=ContactResp.css.map */

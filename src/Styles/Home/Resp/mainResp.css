@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1024px) {
+  .hero-section {
+    height: 315px;
+  }
+  section {
+    padding: 2em 1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-section {
+    height: 252px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-section {
+    background-size: contain;
+  }
+}
+/*# sourceMappingURL=mainResp.css.map */

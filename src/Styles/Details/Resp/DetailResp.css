@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1024px) {
+  section {
+    padding: 2em;
+  }
+  .cake-info-section .container .cake-img {
+    width: 50%;
+  }
+  .cake-info-section .container .content {
+    width: 50%;
+  }
+  .cake-info-section .container .content form {
+    width: 75%;
+  }
+  .cake-info-section .container .content form .size {
+    margin-top: 2em;
+  }
+  .cake-info-section .container .content .info ul {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cake-info-section {
+    padding: 2em 1em;
+    padding-top: 6em;
+  }
+  .cake-info-section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 1em;
+    height: 100%;
+  }
+  .cake-info-section .container .cake-img {
+    width: 50%;
+  }
+  .cake-info-section .container .content {
+    margin-top: 2em;
+    margin-left: 0;
+    width: 100%;
+  }
+  .cake-info-section .container .content form {
+    width: 50%;
+  }
+  .cake-info-section .container .content form .size {
+    margin-top: 2em;
+  }
+  .review-section {
+    margin-top: 7em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cake-info-section {
+    padding: 2em 1em;
+    padding-top: 6em;
+  }
+  .cake-info-section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cake-info-section .container .cake-img {
+    width: 92%;
+  }
+  .cake-info-section .container .content {
+    margin-top: 2em;
+    margin-left: 0;
+    width: 100%;
+  }
+  .cake-info-section .container .content form {
+    width: 90%;
+  }
+  .cake-info-section .container .content form .size {
+    margin-top: 2em;
+  }
+  .review-section {
+    margin-top: 0em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .cake-info-section {
+    padding: 2em 1em;
+    padding-top: 6em;
+  }
+  .cake-info-section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cake-info-section .container .cake-img {
+    width: 80%;
+  }
+  .cake-info-section .container .content {
+    margin-top: 2em;
+    margin-left: 0;
+    width: 100%;
+  }
+  .cake-info-section .container .content form {
+    width: 90%;
+  }
+  .cake-info-section .container .content form .size {
+    margin-top: 2em;
+  }
+  .review-section {
+    margin-top: 0em;
+  }
+  .card-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+/*# sourceMappingURL=DetailResp.css.map */

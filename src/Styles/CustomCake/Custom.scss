@@ -1,0 +1,120 @@
+@import url(../Navbar/Navbar.css);
+@import url(../Components/Components.css);
+@import url(../Components/Custom-radio/cust-radio.css);
+@import url(../../Styles/Components/Input-Fields/inputFields.css);
+body {
+    box-sizing: border-box;
+}
+
+.cover-img {
+    background-image: url(../../../Images/Component_Img/custom-hero.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.custom-section {
+    .or {
+        margin: 4em 0em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        font-size: 15px;
+    }
+    .or::after {
+        content: "";
+        background-color: var(--btnColor);
+        height: 5px;
+        width: 40%;
+
+        margin-left: 1em;
+        border-radius: 5em;
+    }
+    .or::before {
+        content: "";
+        background-color: var(--btnColor);
+        height: 5px;
+        width: 40%;
+        margin-right: 1em;
+        border-radius: 5em;
+    }
+
+    form {
+        .custom-form {
+            margin-bottom: 4em;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .left {
+                margin-right: 1em;
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-bt;
+                .size {
+                    text-align: left;
+                    margin-top: 1em;
+
+                    .cust-radio {
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+            .right {
+                margin-left: 1em;
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+
+        .design-photo {
+            label {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            p {
+                margin-bottom: 1em;
+            }
+            .btn {
+                margin-top: 1em;
+                background-color: var(--btnColor);
+                border-radius: 5em;
+                padding: 5px 0em;
+                color: white;
+                text-align: center;
+                width: 10%;
+            }
+            input {
+                display: none;
+            }
+
+            img {
+                width: 30%;
+            }
+        }
+
+        input[type="submit"]{
+            background-color: var(--btnColor);
+            color: white;
+            border: none;
+            width: 10%;
+            padding: 5px 0;
+            border-radius: 5em;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}
+
+

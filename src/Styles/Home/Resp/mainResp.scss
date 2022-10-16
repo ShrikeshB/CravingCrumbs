@@ -1,0 +1,24 @@
+// device with 1024px
+@media only screen and (max-width: 1024px) {
+    .hero-section{
+        height: 315px;
+    }
+
+    section{
+        padding: 2em 1em;
+    }
+}
+
+// device with 800px
+@media only screen and (max-width: 800px) {
+    .hero-section{
+        height: 252px;
+    }
+}
+
+// device with 480px
+@media only screen and (max-width: 480px) {
+    .hero-section{
+        background-size: contain;
+    }
+}

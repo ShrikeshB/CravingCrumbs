@@ -1,0 +1,48 @@
+@media only screen and (max-width: 800px) {
+  .user-acc {
+    padding: 5em 4em;
+  }
+  .user-acc .container .img-container {
+    width: 30%;
+  }
+  .user-acc .container .img-picker .btn {
+    width: 36%;
+  }
+  .user-acc .container form input[type="submit"] {
+    width: 50%;
+  }
+  .user-acc .container .user-details .left,
+  .user-acc .container .user-details .right {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .user-acc {
+    padding: 5em 2em;
+  }
+  .user-acc .container .img-container {
+    width: 40%;
+  }
+  .user-acc .container .img-picker .btn {
+    width: 36%;
+  }
+  .user-acc .container form input[type="submit"] {
+    width: 50%;
+  }
+  .user-acc .container .user-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-acc .container .user-details .left,
+  .user-acc .container .user-details .right {
+    width: 100%;
+    margin: 0;
+  }
+  .user-acc .container .user-details .right {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=AccountResp.css.map */

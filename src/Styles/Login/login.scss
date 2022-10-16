@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins, calibri;
+    box-sizing: border-box;
+}
+:root {
+    // bg color for body bg.
+    --bodyColor: #dce5f3;
+    //btn colors
+    --btnColor: #fd9b4e;
+}
+
+body {
+    background-color: var(--bodyColor);
+    height: 100vh;
+    background-image: url(../../../Images/Component_Img/cupCake.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+// Logo
+.logo {
+    width: 25%;
+    margin: 1em 0em 0em 1em;
+    position: absolute;
+    img {
+        width: 50%;
+    }
+}
+
+//container
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    // collection of forms
+    .forms {
+        width: 25%;
+        height: 80%;
+        background-color: #fff;
+        border-radius: 2em;
+        box-shadow: 1px 1px 16px 5px rgba(0, 0, 0, 0.299);
+        margin-right: 10em;
+        position: relative;
+        overflow-x: hidden;
+
+        // form container to arrang the layout
+        .form-container {
+            width: 200%;
+            display: flex;
+            position: absolute;
+            left: 0%;
+            transition: 0.5s ease;
+
+            .switchForms{
+                color: rgb(69, 69, 255);
+                cursor: pointer;
+            }
+        }
+
+        // Animation used to toggle btw login & signup forms
+        .active-signup {
+            left: -100%;
+        }
+
+        // a common code for both the forms
+        .Signup-form,
+        .login-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h1 {
+                margin-top: 2em;
+            }
+            form {
+                margin-top: 3em;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+           
+
+                // input fields code
+                .input-field {
+                    margin-bottom: 2em;
+                    width: 100%;
+                    label {
+                        margin-left: 10px;
+                        font-weight: 350;
+                    }
+                    input {
+                        width: 100%;
+                        border-radius: 2em;
+                        padding: 8px 1em;
+                        border: 1px solid gray;
+                        outline-color: var(--btnColor);
+                    }
+                }
+
+                //submit btn code
+                .btn-field {
+                    input {
+                        background-color: var(--btnColor);
+                        color: white;
+                        border: none;
+                        padding: 0.5em 2em;
+                        font-size: 16px;
+                        margin-top: 1em;
+                        cursor: pointer;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    opacity: 70%;
+                    text-align: center;
+                }
+            }
+        }
+
+        //extra code for image
+        .login-form {
+            .img-container {
+                margin-top: 6em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

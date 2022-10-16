@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,cAAc,CAAA;IACV,OAAO,EAAE,OAAO;GAInB;EALD,AAEI,cAFU,CAEV,KAAK,CAAA;IACD,KAAK,EAAE,GAAG;GACb",
+    "sources": [
+        "AboutResp.scss"
+    ],
+    "names": [],
+    "file": "AboutResp.css"
+}

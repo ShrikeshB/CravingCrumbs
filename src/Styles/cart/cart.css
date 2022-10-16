@@ -1,0 +1,45 @@
+@import url(../Components/Components.css);
+@import url(../Navbar/Navbar.css);
+@import url(../Components/order-card/OrderCard.css);
+:root {
+  --bodyColor: #dce5f3;
+  --btnColor: #fd9b4e;
+}
+
+.order-card .content .bottom .btns .remove-btn {
+  padding: 5px 1em;
+  border-radius: 5em;
+}
+
+.order-card .content .bottom .buy-btn {
+  padding: 5px 1em;
+  background-color: var(--btnColor);
+  border-radius: 5em;
+  color: white;
+}
+
+.order-section {
+  padding-top: 10em;
+}
+
+.order-section .order-card-container {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.order-card .content .bottom .btns a {
+  text-decoration: none;
+}
+
+.order-card .content .bottom .btns .remove-btn {
+  background-color: #e9e9e9;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .order-section {
+    padding: 6em 1em;
+  }
+}
+/*# sourceMappingURL=cart.css.map */
