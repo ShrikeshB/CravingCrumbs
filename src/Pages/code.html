@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craving Crumb | Forgot Password</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="../../Icons/cake-white.png" type="image/x-icon" />
+
+    <!-- css linked -->
+    <link rel="stylesheet" href="../Styles/ForgorPassword/Forgot.css" />
+    <!-- auth responsiveness behaviour -->
+    <link rel="stylesheet" href="../Styles/Login/Resp/AuthResp.css" />
+</head>
+
+<body>
+
+    <form action="http://localhost/CakeSite/src/PHP/VerifyCode.php" method="post">
+        <div class="container">
+            <div class="cust-form">
+                <p>Code has send your mail!</p><br>
+                <div class="input-field">
+                    <label>Enter Code</label>
+                    <input name="code" type="number" required />
+                </div>
+
+                <input type="submit" value="submit" name="verify" class="btn cust-submit-btn">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

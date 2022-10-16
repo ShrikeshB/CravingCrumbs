@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craving Crumb | Authentication</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="../../Icons/cake-white.png" type="image/x-icon" />
+
+    <!-- Login.css linked -->
+    <link rel="stylesheet" href="../Styles/Login/login.css" />
+    <!-- auth responsiveness behaviour -->
+    <link rel="stylesheet" href="../Styles/Login/Resp/AuthResp.css" />
+  </head>
+  <body>
+    <!-- To import logo -->
+    <div class="logo">
+      <div class="img-contianer">
+        <img src="../../Images/Component_Img/Logo.png" alt="" />
+      </div>
+    </div>
+
+    <!-- form containe -->
+    <div class="container">
+      <div class="forms">
+        <div class="form-container">
+          <!-- Login Form -->
+          <div class="login-form">
+            <div class="img-container">
+              <img src="../../Images/Component_Img/Logo.png" alt="" />
+            </div>
+            <form action="http://localhost/CakeSite/src/PHP/Auth.php" method="post">
+              <div class="input-field">
+                <label>Email</label><br />
+                <input name="email" type="email" required />
+              </div>
+              <div class="input-field">
+                <label>Password</label><br />
+                <input name="password" type="password" required />
+              </div>
+              <div class="btn-field">
+                <input name="login" type="submit" value="Login" />
+              </div>
+              <p class="switchForms" onclick="activeForm()">Don't have account?</p>
+              <p>Or</p>
+              <a href="./ForgotPassword.html">Forgot Password</a>
+            </form>
+          </div>
+
+          <!-- Signup form -->
+          <div class="Signup-form">
+            <h1>Get Started</h1>
+            <form action="http://localhost/CakeSite/src/PHP/CodeGenerator.php" method="post">
+              <div class="input-field">
+                <label>Email</label><br />
+                <input type="email" name="email" required />
+              </div>
+
+              <div class="input-field">
+                <label>Username</label><br />
+                <input type="text" name="uname" required />
+              </div>
+
+              <div class="input-field">
+                <label>Password</label><br />
+                <input type="password" name="password" required />
+              </div>
+             
+              <div class="btn-field">
+                <input type="submit" name="signin" value="Signup" />
+              </div>
+              <p class="switchForms" onclick="activeForm()">Already have account?</p>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Script for form animation -->
+  <script src="../JS/Auth/AuthAnimation.js"></script>
+</html>
